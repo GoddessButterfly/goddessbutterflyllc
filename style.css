@@ -390,3 +390,44 @@ a:hover {
     background:#00ffff;
     color:black;
     }
+/* Mobile Menu */
+
+.menu-toggle {
+    display:none;
+    background:#7b2cff;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:25px;
+}
+
+
+@media(max-width:700px){
+
+.menu-toggle {
+    display:block;
+}
+
+
+nav ul {
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    background:#111;
+    padding:20px;
+}
+
+
+nav ul.active {
+    display:flex;
+}
+
+
+nav {
+    flex-direction:column;
+    gap:20px;
+}
+
+}
