@@ -293,3 +293,27 @@ transform:scale(1);
 }
 
 }
+/* Social Media Buttons */
+
+.social-buttons {
+    margin-top:30px;
+}
+
+
+.social {
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    border-radius:25px;
+    border:2px solid #00ffff;
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+}
+
+
+.social:hover {
+    background:#7b2cff;
+    box-shadow:0 0 25px #00ffff;
+    transform:translateY(-5px);
+}
