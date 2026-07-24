@@ -31,3 +31,17 @@ sections.forEach(section => {
   section.style.transition = "all 0.8s ease";
   observer.observe(section);
 });
+// Mobile Menu Toggle
+
+const menuButton = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+if(menuButton){
+
+menuButton.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+}
