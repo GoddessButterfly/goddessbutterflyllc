@@ -352,3 +352,19 @@ transform:scale(1);
     0 0 25px #b026ff,
     0 0 35px #00ffff;
 }
+/* Business Hours */
+
+.card p {
+    margin:10px;
+}
+
+
+/* Premium Link Styling */
+
+a {
+    transition:.3s ease;
+}
+
+a:hover {
+    text-shadow:0 0 10px #00ffff;
+}
