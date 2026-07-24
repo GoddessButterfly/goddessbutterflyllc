@@ -368,3 +368,25 @@ a {
 a:hover {
     text-shadow:0 0 10px #00ffff;
 }
+/* Floating Quote Button */
+
+.floating-quote {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #7b2cff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 999;
+    box-shadow: 0 0 20px #00ffff;
+    animation: pulseGlow 2s infinite;
+}
+
+
+.floating-quote:hover {
+    background:#00ffff;
+    color:black;
+    }
