@@ -201,3 +201,95 @@ nav ul {
 }
 
 }
+/* Goddess Butterfly Luxury Effects */
+
+.hero-content {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.button {
+    animation: pulseGlow 2s infinite;
+}
+
+
+.logo {
+    animation: butterflyGlow 3s infinite alternate;
+}
+
+
+.card, .image-box {
+    animation: floatUp 1s ease forwards;
+}
+
+
+/* Glowing Logo */
+
+@keyframes butterflyGlow {
+
+from {
+    text-shadow: 
+    0 0 10px #7b2cff,
+    0 0 20px #00ffff;
+}
+
+to {
+    text-shadow:
+    0 0 25px #b026ff,
+    0 0 35px #00ffff;
+}
+
+}
+
+
+/* Button Glow */
+
+@keyframes pulseGlow {
+
+0% {
+    box-shadow:0 0 10px #7b2cff;
+}
+
+50% {
+    box-shadow:0 0 30px #00ffff;
+}
+
+100% {
+    box-shadow:0 0 10px #7b2cff;
+}
+
+}
+
+
+/* Floating Effect */
+
+@keyframes floatUp {
+
+from {
+    opacity:0;
+    transform:translateY(40px);
+}
+
+to {
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+/* Page Fade */
+
+@keyframes fadeIn {
+
+from {
+opacity:0;
+transform:scale(.95);
+}
+
+to {
+opacity:1;
+transform:scale(1);
+}
+
+}
