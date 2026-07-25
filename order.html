@@ -1,121 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<form action="https://formsubmit.co/goddessbutterflyllc@gmail.com"
+      method="POST"
+      enctype="multipart/form-data">
 
-<head>
+<h3>Customer Information</h3>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<input type="text" name="Full Name" placeholder="Full Name" required><br><br>
 
-<title>Goddess Butterfly | Custom Order Request</title>
+<input type="tel" name="Phone" placeholder="Phone Number" required><br><br>
 
-<link rel="stylesheet" href="style.css">
+<input type="email" name="Email" placeholder="Email Address" required><br><br>
 
-</head>
+<h3>Order Details</h3>
 
+<select name="Product" required>
+    <option value="">Select a Product</option>
+    <option>Custom T-Shirt</option>
+    <option>Custom Hoodie</option>
+    <option>Sweatshirt</option>
+    <option>DTF Transfer</option>
+    <option>Embroidery</option>
+</select><br><br>
 
-<body>
+<input type="text" name="Shirt Color" placeholder="Shirt Color"><br><br>
 
+<input type="text" name="Size" placeholder="Size(s)"><br><br>
 
-<header>
+<input type="number" name="Quantity" placeholder="Quantity" min="1"><br><br>
 
-<nav>
+<input type="date" name="Needed By"><br><br>
 
-<h1 class="logo">🦋 Goddess Butterfly</h1>
+<h3>Upload Your Design</h3>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="order.html">Order</a></li>
-</ul>
+<input type="file"
+       name="attachment"
+       accept=".jpg,.jpeg,.png,.pdf,.svg,.ai"><br><br>
 
-</nav>
+<textarea name="Design Details"
+          rows="6"
+          placeholder="Describe your design, text, colors, placement, and any other details."></textarea><br><br>
 
-</header>
-
-
-
-<section>
-
-<h2>Request Your Custom Order</h2>
-
-<p>
-Tell us about your custom shirt, hoodie, DTF transfer, or embroidery project.
-</p>
-
-
-<form action="https://formsubmit.co/goddessbutterflyllc@gmail.com" method="POST">
-
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<br><br>
-
-
-<input type="tel" name="phone" placeholder="Phone Number" required>
-
-<br><br>
-
-
-<input type="email" name="email" placeholder="Email Address" required>
-
-<br><br>
-
-
-<select name="service">
-
-<option>Custom Shirt</option>
-
-<option>Custom Hoodie</option>
-
-<option>DTF Transfer</option>
-
-<option>Embroidery</option>
-
-</select>
-
-
-<br><br>
-
-
-<input type="number" name="quantity" placeholder="Quantity">
-
-
-<br><br>
-
-
-<textarea name="details" placeholder="Describe your design idea"></textarea>
-
-
-<br><br>
-
+<input type="hidden" name="_subject" value="New Goddess Butterfly Order Request">
 
 <button class="button" type="submit">
-<label for="design">Upload Your Design (Optional)</label><br>
-
-<input
-  type="file"
-  id="design"
-  name="attachment"
-  accept=".jpg,.jpeg,.png,.pdf,.svg,.ai">
-Send Order Request
+Submit Order Request
 </button>
 
-
 </form>
-
-
-</section>
-
-
-
-<footer>
-
-<p>
-© 2026 Goddess Butterfly | Custom Apparel
-</p>
-
-</footer>
-
-
-</body>
-
-</html>
