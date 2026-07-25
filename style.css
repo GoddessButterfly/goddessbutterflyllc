@@ -487,3 +487,25 @@ visibility:hidden;
 }
 
 }
+/* Lavender Butterfly Background */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "🦋   🦋   🦋   🦋";
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    font-size: 80px;
+    letter-spacing: 100px;
+    line-height: 250px;
+    color: #d8b4ff;
+    opacity: 0.08;
+    z-index: -1;
+    pointer-events: none;
+}
