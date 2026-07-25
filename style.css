@@ -514,3 +514,44 @@ body::before {
     z-index: -1;
     pointer-events: none;
 }
+/* Luxury Brand Header */
+
+.brand-logo {
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+.butterfly-icon {
+    font-size:45px;
+    filter:drop-shadow(0 0 15px #d8b4ff);
+    animation:fly 2s infinite alternate;
+}
+
+
+.logo {
+    font-family:'Great Vibes', cursive;
+    font-size:48px;
+    color:#d8b4ff;
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 10px #7b2cff,
+    0 0 25px #00ffff;
+}
+
+
+/* Mobile Logo */
+
+@media(max-width:700px){
+
+.brand-logo {
+    flex-direction:column;
+}
+
+.logo {
+    font-size:38px;
+}
+
+}
