@@ -29,8 +29,13 @@ nav {
 }
 
 .logo {
-    color: #b026ff;
-    text-shadow: 0 0 15px #00ffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    color: #d8b4ff;
+    text-shadow:
+    0 0 10px #7b2cff,
+    0 0 20px #00ffff;
+    animation: butterflyGlow 3s infinite alternate;
 }
 
 nav ul {
