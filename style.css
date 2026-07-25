@@ -555,3 +555,12 @@ body::before {
 }
 
 }
+/* Shop Pricing */
+
+.price {
+    color:#d8b4ff;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px;
+    text-shadow:0 0 10px #7b2cff;
+}
