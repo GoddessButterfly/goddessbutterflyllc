@@ -492,27 +492,7 @@ visibility:hidden;
 }
 
 }
-/* Lavender Butterfly Background */
 
-body {
-    position: relative;
-    overflow-x: hidden;
-}
-
-body::before {
-    content: "🦋   🦋   🦋   🦋";
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    font-size: 80px;
-    letter-spacing: 100px;
-    line-height: 250px;
-    color: #d8b4ff;
-    opacity: 0.08;
-    z-index: -1;
-    pointer-events: none;
 }
 /* Luxury Brand Header */
 
@@ -563,4 +543,158 @@ body::before {
     font-weight:bold;
     margin:15px;
     text-shadow:0 0 10px #7b2cff;
+}
+/* =========================================
+   GODDESS BUTTERFLY SPARKLE BACKGROUND
+   ========================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    /* Generated Goddess Butterfly artwork */
+    background-image: url("butterfly-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    background-color: #050509;
+}
+
+
+/* Dark overlay keeps text easy to read */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.30);
+
+    z-index: -2;
+    pointer-events: none;
+}
+
+
+/* Animated butterflies */
+
+.animated-butterflies {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* Individual butterflies */
+
+.flying-butterfly {
+    position: absolute;
+
+    font-size: 35px;
+
+    opacity: 0.65;
+
+    filter:
+        drop-shadow(0 0 8px #7b2cff)
+        drop-shadow(0 0 15px #00ffff);
+
+    animation:
+        butterflyFloat 12s linear infinite,
+        butterflySparkle 2s ease-in-out infinite alternate;
+}
+
+
+/* Different positions and speeds */
+
+.flying-butterfly:nth-child(1) {
+    left: 5%;
+    top: 80%;
+    animation-duration: 14s;
+}
+
+.flying-butterfly:nth-child(2) {
+    left: 25%;
+    top: 90%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+.flying-butterfly:nth-child(3) {
+    left: 50%;
+    top: 75%;
+    animation-duration: 16s;
+    animation-delay: 4s;
+}
+
+.flying-butterfly:nth-child(4) {
+    left: 75%;
+    top: 95%;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+.flying-butterfly:nth-child(5) {
+    left: 90%;
+    top: 70%;
+    animation-duration: 15s;
+    animation-delay: 5s;
+}
+
+
+/* Butterfly movement */
+
+@keyframes butterflyFloat {
+
+    0% {
+        transform:
+            translate(0, 100px)
+            rotate(-10deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.7;
+    }
+
+    50% {
+        transform:
+            translate(-80px, -400px)
+            rotate(10deg)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translate(100px, -1000px)
+            rotate(-15deg)
+            scale(0.8);
+
+        opacity: 0;
+    }
+}
+
+
+/* Sparkle effect */
+
+@keyframes butterflySparkle {
+
+    from {
+        filter:
+            drop-shadow(0 0 5px #7b2cff)
+            drop-shadow(0 0 10px #00ffff);
+    }
+
+    to {
+        filter:
+            drop-shadow(0 0 15px #b026ff)
+            drop-shadow(0 0 30px #00ffff);
+    }
 }
